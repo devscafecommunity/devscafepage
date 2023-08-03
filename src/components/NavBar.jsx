@@ -8,14 +8,14 @@ const links = [
         title: "Home",
         url: "/",
     },
-    {
-        title: "About",
-        url: "/about",
-    },
-    {
-        title: "Contact",
-        url: "/contact",
-    },
+    // {
+    //     title: "About",
+    //     url: "/about",
+    // },
+    // {
+    //     title: "Contact",
+    //     url: "/contact",
+    // },
 ];
 
 export default function NavBar() {
@@ -64,18 +64,16 @@ export default function NavBar() {
               </h3>
             </a>
           </div>
-
-<br />
-{/* Links Section */}
-<div className="items-center space-x-8 flex flex-row justify-center">
-  {links.map((link, index) => (
-    <Link key={index} href={link.url} className="flex px-4 text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">
-        {link.title}
-    </Link>
-  ))}
-</div>
+            <br />
+            {/* Links Section */}
+            <div className="items-center space-x-8 flex flex-row justify-center">
+              {links.map((link, index) => (
+                <Link key={index} href={link.url} className="flex px-4 text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">
+                    {link.title}
+                </Link>
+              ))}
+            </div>
           {/* Icon Menu Section */}
-
         </div>
       </div>
     </div>

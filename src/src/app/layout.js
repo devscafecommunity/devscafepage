@@ -5,6 +5,7 @@ export const metadata = {
   title: "Devs Café",
   description:
     "Somos uma comunidade de desenvolvedores apaixonados, criada para promover a troca de conhecimentos, colaboração e inspiração. Aqui, você encontrará projetos incríveis, códigos abertos e discussões animadas sobre programação.",
+  image: "/assets/images/logo.png",
 };
 
 export default function RootLayout({ children }) {

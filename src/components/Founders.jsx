@@ -27,7 +27,7 @@ let data = [
     id: 4,
     name: "octavio-oi",
     image: "/founders/octavio-oi.jpg",
-    about: "Full Stack developer, Founder of DevsCafe.",
+    about: "Full Stack developer, electronics technician and electronics designer, Founder of DevsCafe.",
     link: "https://github.com/octavio-oi",
   },
   {

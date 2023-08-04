@@ -43,12 +43,12 @@ export default function NavBar() {
       <div className="flex flex-col">
         {/* Page Scroll Progress */}
         <div
-          className="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5 bg-blue-500"
+          className="fixed inset-x-0 top-0 z-50 h-1 mt-1 bg-blue-500"
           style={{ width: `${percent}%` }}
         ></div>
 
         {/* Navbar */}
-        <div className="flex flex-row justify-around py-4 bg-white/80 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10">
+        <div className="flex flex-row justify-around py-4 bg-white/80 backdrop-blur-md  w-full fixed top-0 left-0 right-0 z-10">
           {/* Logo Container */}
           <div className="flex items-center">
             {/* Logo */}

@@ -11,9 +11,9 @@ let data = [
   },
   {
     id: 2,
-    name: "ThiagoSantosOFC",
+    name: "Thiago Santos",
     image: "/founders/ThiagoSantosOFC.jpg",
-    about: "Full-stack Developer, Founder of DevsCafe and FitCommerce.",
+    about: "Full-stack Developer, Founder of DevsCafe, Excelsi and FitCommerce.",
     link: "https://github.com/ThiagoSantosOFC",
   },
   {
@@ -45,11 +45,12 @@ export default function Founders() {
       <div className="flex flex-col items-center justify-center p-6">
         <h1 className="text-4xl font-medium">Founders</h1>
       </div>
-      <div className="flex flex-row flex-wrap  items-center justify-center space-x-4">
+      <br />
+      <div className="flex flex-row flex-wrap   items-center justify-center space-x-4">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center max-w-2xl bg-white/80 backdrop-blur-md shadow-md rounded-2xl"
+            className="flex flex-col items-center mt-6 justify-center max-w-2xl bg-white/80 backdrop-blur-md shadow-md rounded-2xl"
           >
             <Link href={`${item.link}`}>
               <div className="flex flex-col items-center justify-center">
@@ -62,11 +63,12 @@ export default function Founders() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-2">
-                <h1 className="text-2xl font-medium text-blue-500">
+                <h1 className="text-2xl font-medium text-[#331b15]">
                   {item.name}
                 </h1>
+                
                 <p
-                  className="text-sm font-bold text-center
+                  className="text-sm py-2 font-bold text-center
                             max-w-sm
                         "
                 >

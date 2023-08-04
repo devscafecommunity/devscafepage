@@ -26,8 +26,8 @@ let data = [
 function DefaultCarousel() {
   return (
     <Carousel
-        loop={'true'}
-        animation={'true'}
+        loop={true}
+        animation="true"
     >
         {data.map((item, index) => (
             <div key={index} className="flex flex-col items-center justify-center">
@@ -65,7 +65,6 @@ function DefaultCarousel() {
     </Carousel>
   )
 }
-
 
 export default function Projects() {
   return (

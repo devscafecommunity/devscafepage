@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Header = () => {
   return (
-    <div className="min-h-full flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 mt-10">
+    <div className="min-h-full flex items-center justify-center py-16 pt-48 px-4 sm:px-6 lg:px-8 mt-10">
       <div className="flex flex-col items-center justify-center mt-6  ">
         <Image
           src="/assets/images/logo.png"

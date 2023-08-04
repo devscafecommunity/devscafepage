@@ -16,7 +16,7 @@ export default function About() {
       </p>
       <h2 className="mb-4">O que oferecemos?</h2>
       <br />
-      <p className="mb-4 text-base font-semibold text-center align-middle">
+      <p className="mb-4 text-lg font-semibold text-center align-middle">
         <span>Oportunidades de colaborar com outros desenvolvedores</span>
         <br />
 

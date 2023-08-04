@@ -9,10 +9,16 @@ let data = [
   {
     id: 1,
     title: "CafeWithCode",
-    description:
-      "DevCourse is a free and open-source course that aims to help beginners learn programming concepts and develop their coding skills. Whether you are stepping into the programming world for the first time or seeking to build a solid foundation in C, DevCourse is your guide on this learning journey. With a comprehensive curriculum, practical examples, and engaging projects, this course equips you with the core concepts of programming using C.",
-    image:
-      "https://raw.githubusercontent.com/devscafecomunity/CafeWithCode_Course/main/assets/logo.png",
+    description:"DevCourse is a free and open-source course that aims to help beginners learn programming concepts and develop their coding skills. Whether you are stepping into the programming world for the first time or seeking to build a solid foundation in C, DevCourse is your guide on this learning journey. With a comprehensive curriculum, practical examples, and engaging projects, this course equips you with the core concepts of programming using C.",
+    image:"https://raw.githubusercontent.com/devscafecomunity/CafeWithCode_Course/main/assets/logo.png",
+    link:"https://github.com/devscafecomunity/CafeWithCode_Course"
+  },
+  {
+    id: 2,
+    title: "Dryad Programing Language",
+    description:"Dryad is a linear programing language. It is designed to be a simple language that is easy to learn and use. It is designed to be an plug and play language.",
+    image:"https://raw.githubusercontent.com/Dryad-lang/Dryad/main/assets/logo.png",
+    link:"https://dryad.vercel.app"
   },
 ];
 
@@ -20,13 +26,12 @@ let data = [
 function DefaultCarousel() {
   return (
     <Carousel
-        swipe={'true'}
         loop={'true'}
         animation={'true'}
     >
         {data.map((item, index) => (
             <div key={index} className="flex flex-col items-center justify-center">
-                <Link href="/projects">
+                <Link href={item.link}>
                     <Tooltip placement="top"
                         animate={{
                             mount: { scale: 1, y: 0 },

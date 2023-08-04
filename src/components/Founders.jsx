@@ -33,7 +33,7 @@ let data = [
   {
     id: 5,
     name: "Yulo-sudo22",
-    image: "/founders/Yulo-sudo22.jpg",
+    image: "/founders/yulo-sudo22.jpg",
     about: "Full Stack developer, Founder of DevsCafe.",
     link: "https://github.com/yulo-sudo22",
   },

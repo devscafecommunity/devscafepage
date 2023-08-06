@@ -6,7 +6,7 @@ let data = [
     id: 1,
     name: "LyeZinho",
     image: "/founders/LyeZinho.png",
-    about: "Back-end Developer, Founder of Dryad Progaming Language, DevCourse and DevsCafe.",
+    about: "Back-end Developer, Founder of Dryad Progaming Language, CafeWithCodeCourse, slf-auth and DevsCafe.",
     link: "https://github.com/LyeZinho",
   },
   {

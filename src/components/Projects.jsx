@@ -9,7 +9,7 @@ let data = [
   {
     id: 1,
     title: "CafeWithCode",
-    description:"DevCourse is a free and open-source course that aims to help beginners learn programming concepts and develop their coding skills. Whether you are stepping into the programming world for the first time or seeking to build a solid foundation in C, DevCourse is your guide on this learning journey. With a comprehensive curriculum, practical examples, and engaging projects, this course equips you with the core concepts of programming using C.",
+    description:"CafeWithCode_Course is a free and open-source course that aims to help beginners learn programming concepts and develop their coding skills. Whether you are stepping into the programming world for the first time or seeking to build a solid foundation in C, DevCourse is your guide on this learning journey. With a comprehensive curriculum, practical examples, and engaging projects, this course equips you with the core concepts of programming using C.",
     image:"https://raw.githubusercontent.com/devscafecomunity/CafeWithCode_Course/main/assets/logo.png",
     link:"https://github.com/devscafecomunity/CafeWithCode_Course"
   },

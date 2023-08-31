@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply bg-[#C9CDB9] text-[#333D29] tracking-wide font-staatliches min-h-screen flex flex-col justify-center items-center;
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl 
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  
+  li {
+    @apply cursor-pointer
+  }
+
+
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Antic', sans-serif;
+}
+
+
+
+
+h1 {
+  @apply font-bold text-4xl text-center;
+}
+
+h2 {
+  @apply text-3xl font-normal;
+}
+
+p {
+  @apply text-base;
+}

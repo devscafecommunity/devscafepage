@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches');
+
+:root {
+  --clr-100: hsl(90, 20%, 20%);
+  --clr-200: hsl(72, 17%, 76%);
+  --clr-300: hsl(67, 19%, 72%);
+  --clr-400: hsl(46, 21%, 64%);
+  --clr-500: hsl(30, 44%, 45%);
+  --clr-600: hsl(30, 44%, 40%);
+  --clr-700: hsl(0, 0%, 100%);
+  --clr-800: hsl(0, 0%, 0%);
+
+  --ff-100: 'Inter', sans-serif;
+  --ff-200: 'Staatliches', cursive;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  outline-style: solid;
+  outline-color: transparent;
+}
+
+body {
+  font-family: var(--ff-100);
+  font-weight: 400;
+  line-height: normal;
+}
+
+body, p, h1, h2 {
+  margin: 0;
+}
+
+main {display: grid;}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {text-decoration: none;}
+
+/* Aria */
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+/* Nav */
+
+.nav {
+  position: static;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-300);
+
+  padding: 1rem;
+}
+
+.nav_content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav_link {
+  font-size: 1.5rem;
+  color: var(--clr-100);
+
+  transition: color 200ms linear;
+}
+
+.nav_content .nav_link {
+  font-size: 1.2rem;
+}
+
+.nav_link:is(:hover, :focus-visible) {
+  color: var(--clr-400);
+}
+
+/* Home */
+
+.home {
+  display: grid;
+  place-items: center;
+  height: 99vh;
+  background-color: var(--clr-200);
+}
+
+.home_content {
+  display: grid;
+  gap: 1rem;
+}
+
+.home_text {
+  text-align: center;
+  font-family: var(--ff-200);
+  font-size: 5rem;
+  color: var(--clr-100);
+
+  width: 15ch;
+}
+
+.home_button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-700);
+
+  background-color: var(--clr-100);
+
+  padding: 1rem 8rem;
+  border-radius: 0.5rem;
+  margin-inline: auto;
+
+  transition: background-color 200ms linear;
+}
+
+.home_button:is(:hover, :focus-visible) {
+  background-color: var(--clr-400);
+}
+
+/* About */
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-800);
+  gap: 0.5rem;
+
+  padding: 2rem;
+}
+
+.about_img {
+  width: 240px;
+}
+
+.about_text {
+  font-size: 1.4rem;
+  color: var(--clr-300);
+}
+
+/* Projects */
+
+.projects {
+  background-color: var(--clr-600);
+  padding: 1rem;
+}
+
+.projects_text {
+  text-align: center;
+  font-family: var(--ff-200);
+  font-size: 4rem;
+  color: var(--clr-700);
+  margin-block: 5rem 3rem;
+}
+
+.projects_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-inline: 5rem;
+  margin-inline: auto;
+}
+
+.projects_container {
+  display: grid;
+  place-items: center;
+  height: 340px;
+  background-color: var(--clr-500);
+  border-radius: 0.5rem;
+}
+
+.projects_container:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.projects_container:nth-child(4) {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.projects_container span {
+  font-family: var(--ff-200);
+  font-size: 2rem;
+  color: var(--clr-700);
+}
+
+/* Baristas */
+
+.baristas {
+  background-color: var(--clr-600);
+  padding: 1rem;
+}
+
+.baristas_title {
+  text-align: center;
+  font-family: var(--ff-200);
+  font-size: 4rem;
+  color: var(--clr-700);
+  margin-block: 5rem 3rem;
+}
+
+.baristas_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 10rem;
+  margin-inline: auto;
+}
+
+.baristas_link {
+  width: 30%;
+  background-color: var(--clr-500);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.baristas_link:is(:hover, :focus-visible) {
+  box-shadow: 0 0.5rem 0.5rem var(--clr-800);
+}
+
+.baristas_link img {
+  width: 100%;
+}
+
+/* Contact */
+
+.contact {
+  background-color: var(--clr-600);
+  padding: 5rem 1rem 1rem;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--clr-700);
+  margin-block: 0.5rem;
+}
+
+.contact_link:is(:hover, :focus-visible) {
+  filter: invert(1);
+}
+
+.contact_license {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--clr-700);
+}

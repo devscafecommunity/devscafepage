@@ -1,13 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
+import type { Config } from 'tailwindcss'
+const withMT = require('@material-tailwind/react/utils/withMT')
 
-
-module.exports = withMT({
+const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     fontFamily: {
@@ -22,8 +20,7 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [
-    require('flowbite/plugin'),
-  ]
-});
+  plugins: [],
+}
 
+module.exports = withMT(config)

@@ -20,10 +20,10 @@ export default function Header() {
       </div>
       <div className="flex flex-col items-center justify-center">
         <h1 className="xs:text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
-          Dev's Café
+          Dev&apos;s Café
         </h1>
         <h3 className="xs:text-sm sm:text-lg md:text-lg lg:text-2xl font-bold">
-          Uma comunidade dev para dev's
+          Uma comunidade dev para dev&apos;s
         </h3>
       </div>
       <div className="h-10"></div>

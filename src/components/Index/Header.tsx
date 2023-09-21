@@ -4,7 +4,7 @@ import { Typography, Button, IconButton, Card } from "@material-tailwind/react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { BsDiscord, BsGithub } from "react-icons/bs";
+import { BsDiscord, BsGithub, BsTwitter, BsYoutube } from "react-icons/bs";
 
 export default function Header() {
   return (
@@ -39,6 +39,12 @@ export default function Header() {
             </Button>
             <Button className="p-4 m-4" onClick={() => { window.open("https://github.com/devscafecommunity", "_blank"); }}>
                 <BsGithub className="mr-2" />
+            </Button>
+            <Button className="p-4 m-4" onClick={() => { window.open("https://www.youtube.com/@devscafe_", "_blank"); }}>
+                <BsYoutube className="mr-2" />
+            </Button>
+            <Button className="p-4 m-4" onClick={() => { window.open("https://twitter.com/devscafe_", "_blank"); }}>
+                <BsTwitter className="mr-2" />  
             </Button>
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function NavbarComponent() {
             {routes.map((route, index) => (
               <div key={index} className="p-2">
                 <Link href={route.route}>
-                  <Typography color="gray">{route.name}</Typography>
+                  <Typography color="gray" className="text-bold text-xl hover:text-white">{route.name}</Typography>
                 </Link>
               </div>
             ))}

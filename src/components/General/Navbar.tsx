@@ -7,8 +7,8 @@ import { useRouter } from "next/router";
 
 let routes = [
   {
-    name: "Home",
-    route: "/",
+    name: "Docs",
+    route: "/devdocs",
   },
   {
     name: "About",

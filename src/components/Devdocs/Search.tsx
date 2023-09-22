@@ -30,7 +30,7 @@ import { useEffect, useState } from "react";
 
 import Image from "next/image";
 
-import { Typography, Button, Spinner } from "@material-tailwind/react";
+import { Typography, Button, Spinner, Card, List, ListItem  } from "@material-tailwind/react";
 
 import {
   BsBook,
@@ -210,7 +210,7 @@ export default function Search() {
 
   function ItemImage({ image, name } : { image: string, name: string } ) {
     return (
-      <div className="flex flex-col justify-center items-center bg-white rounded-2xl m-4 p-2">
+      <div className="flex flex-col justify-center items-center rounded-2xl">
         <Image
           src={image}
           alt={name}
@@ -235,6 +235,7 @@ export default function Search() {
       </div>
       {/* Search results */}
       <div className="pt-4">
+      <List>
         {
             filteredContents.length === 0 ? (
                 <div className="flex flex-col items-center justify-center pt-10">
@@ -244,15 +245,18 @@ export default function Search() {
             ) : (
                 filteredContents.map((content, index) => (
                 <div key={index} className="flex flex-col">
-                    <div className="flex flex-row">
-                    <ItemAbout name={content.name} description={content.description} last_modified={content.last_modified} emmiter={content.emmiter} revision={content.revision} tags={content.tags} author={content.author} />
-                    <ItemImage image={content.image} name={content.name} />
-                    <ItemToolBar html_url={content.html_url} download_url={content.download_url} url={content.url} />
-                    </div>
+                    <ListItem>
+                        <div className="flex flex-row">
+                        <ItemAbout name={content.name} description={content.description} last_modified={content.last_modified} emmiter={content.emmiter} revision={content.revision} tags={content.tags} author={content.author} />
+                        <ItemToolBar html_url={content.html_url} download_url={content.download_url} url={content.url} />
+                        <ItemImage image={content.image} name={content.name} />
+                        </div>
+                    </ListItem>
                 </div>
                 ))
             )
         }
+        </List>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, IconButton, Card } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 import Link from "next/link";
 import Image from "next/image";

@@ -28,12 +28,14 @@ for save resources, execute the entire search once then filter the results in th
 
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+
 import { Typography, Button } from "@material-tailwind/react";
 
 import { BsBook, BsFillFileEarmarkFill,
     BsFolder2Open, BsFillArrowDownCircleFill,
     BsFillClockFill, BsInfoCircle, BsFillEyeFill,
-    BsFillTagFill
+    BsFillTagFill, BsPenFill
 } from "react-icons/bs";
 
 // FaBookReader
@@ -188,8 +190,25 @@ export default function Search() {
                                     {formatTags(content.tags)}
                                 </Typography>
                             </div>
+                            <div className="flex flex-row">
+                                <BsPenFill className="
+                                    text-2xl ml-2 mr-4
+                                " />
+                                <Typography color="gray" className="">
+                                    {content.author}
+                                </Typography>
+                            </div>
                         </div>
-                        <div className="flex flex-col p-2 m-2 bg-white rounded-2xl m-4 p-4 gap-2">
+                        <div className="flex flex-col justify-center items-center p-2 m-2 bg-white rounded-2xl m-4 p-4">
+                            <Image
+                                src={content.image}
+                                alt={content.name}
+                                width={450}
+                                height={450}
+                                className="rounded-lg w-full h-full"
+                            />
+                        </div>
+                        <div className="flex flex-col justify-center items-center p-2 m-2 bg-white rounded-2xl m-4 p-4 gap-2">
                             <Button
                                 className=""
                                 onClick={() => {

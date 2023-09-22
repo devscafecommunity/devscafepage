@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  //Allowed Endpoints
   images: {
-    domains: ['localhost', 'via.placeholder.com'],
+    domains: ['localhost', 'via.placeholder.com', 'raw.githubusercontent.com', 'github.com'],
+  },
+  experimental: {
+    mdxRs: true,
   },
 }
-
-module.exports = nextConfig
+ 
+const withMDX = require('@next/mdx')()
+module.exports = withMDX(nextConfig)

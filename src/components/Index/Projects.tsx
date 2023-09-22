@@ -26,6 +26,12 @@ export default function Projects() {
 
     return (
         <div className="flex flex-col items-center justify-center">
+            <div className="h-10">
+                <Typography color="gray" className="text-4xl">
+                    Nosso projetos
+                </Typography>
+            </div>
+            <div className="h-10"></div>
             <Carousel className="w-full">
                 {projects.map((project: any, index: number) => (
                     <div key={index} className="flex flex-col items-center justify-center">
@@ -33,13 +39,13 @@ export default function Projects() {
                             <Image 
                                 src={project.image}
                                 alt={project.title}
-                                width={350}
-                                height={350}
+                                width={250}
+                                height={250}
                                 className="rounded-2xl w-xl h-xl"
                             />
                             <span className="
                                 font-bold text-sm
-                                absolute pt-4
+                                absolute bottom-2
                             ">
                                 {project.title}
                             </span>

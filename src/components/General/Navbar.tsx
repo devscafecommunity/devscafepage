@@ -11,19 +11,19 @@ let routes = [
     route: "/devdocs",
   },
   {
-    name: "About",
-    route: "/about",
+    name: "Blog",
+    route: "https://devscafeblog.vercel.app",
   },
   {
-    name: "Contact",
-    route: "/contact",
+    name: "Journal",
+    route: "/journal",
   },
 ];
 
 export default function NavbarComponent() {
   return (
     <div>
-      <nav className="fixed top-0 w-full z-50 ">
+      <nav className="top-0 w-full z-50 ">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 p-2 flex row items-center">
           <div className="flex flex-row items-center">
             <Link href="/">

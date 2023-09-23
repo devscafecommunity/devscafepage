@@ -240,7 +240,7 @@ export default function Search() {
             filteredContents.length === 0 ? (
                 <div className="flex flex-col items-center justify-center pt-10">
                     <div className="h-20"></div>
-                    <Typography color="gray" className="text-2xl">Nenhum resultado encontrado</Typography>
+                    <Typography color="gray" className="text-2xl">Nenhum resultado encontrado!</Typography>
                 </div>
             ) : (
                 filteredContents.map((content, index) => (

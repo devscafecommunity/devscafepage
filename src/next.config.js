@@ -1,22 +1,34 @@
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-};
-
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    providerImportSource: '@mdx-js/react',
+/*
+module.exports = {
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+    return config
   },
-});
+}
+*/ 
 
-module.exports = nextConfig;
+// module.exports = {
+//   reactStrictMode: true,
+//   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+//   images: {
+//     domains: ['localhost', 'via.placeholder.com', 'raw.githubusercontent.com', 'github.com'],
+//   }
+// };
 
-module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+module.exports = {
+  reactStrictMode: true,
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   images: {
     domains: ['localhost', 'via.placeholder.com', 'raw.githubusercontent.com', 'github.com'],
-  }
-});
+  },
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+    return config
+  },
+}

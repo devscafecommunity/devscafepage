@@ -14,10 +14,10 @@ let routes = [
     name: "Blog",
     route: "https://devscafeblog.vercel.app",
   },
-  {
-    name: "Journal",
-    route: "/journal",
-  },
+  // {
+  //   name: "Journal",
+  //   route: "/journal",
+  // },
 ];
 
 export default function NavbarComponent() {

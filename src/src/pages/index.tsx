@@ -8,6 +8,7 @@ import Header from '../../components/Index/Header'
 import HeaderAbout from '../../components/Index/HeaderAbout'
 import ContentBoard from '../../components/Index/ContentBoard'
 import Projects from '../../components/Index/Projects'
+import Founders from '../../components/Index/Founders'
 
 export default function Home() {
   return (
@@ -15,9 +16,11 @@ export default function Home() {
       <Header />
       <HeaderAbout />
       <div className='h-20'></div>
-      <ContentBoard />
+      {/* <ContentBoard /> */}
       <div className='h-20'></div>
       <Projects />
+      <div className='h-20'></div>
+      <Founders />
     </div>
   )
 }
